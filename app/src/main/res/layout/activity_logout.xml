@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#FBFBFB"
     tools:context=".logout">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:text="You are logged out"
+        android:id="@+id/textView"
+        android:layout_width="339dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFDFD"
+        android:text="Your vote is being recorded !! "
         android:textAlignment="center"
-        android:textSize="40dp"
-        android:layout_marginTop="20dp"/>
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="192dp"
+        android:layout_height="69dp"
+        android:backgroundTint="#00BCD4"
+        android:text="Back"
+        android:textColor="#FDFCFC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_617676272_2577"
+        tools:layout_editor_absoluteX="0dp" />
+
+</android.support.constraint.ConstraintLayout>

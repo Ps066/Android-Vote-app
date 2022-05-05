@@ -6,25 +6,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class logout extends AppCompatActivity {
-    private Button back;
+public class Credits extends AppCompatActivity {
+
+    private Button exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_logout);
-        back = findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_credits);
+        exit = findViewById(R.id.exit);
+        exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent a = new Intent( logout.this , startup.class);
+                Intent a = new Intent( Credits.this , startup.class);
                 startActivity(a);
             }
         });
-
-    }
-    @Override
-    public void onBackPressed() {
-        return;
     }
 }
